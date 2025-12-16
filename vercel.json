@@ -2,7 +2,8 @@
     "version": 2,
     "framework": null,
     "functions": {
-        "public/index.php": { "runtime": "vercel-php@0.6.0" }
+        "api/*.php": { "runtime": "vercel-php@0.7.1" },
+        "public/index.php": { "runtime": "vercel-php@0.7.1" }
     },
     "routes": [
         {
@@ -12,7 +13,8 @@
     ],
     "env": {
         "APP_ENV": "production",
-        "APP_DEBUG": "false",
-        "APP_URL": "https://event-site.vercel.app"
+        "APP_DEBUG": "true",
+        "APP_URL": "https://event-site.vercel.app",
+        "APP_KEY": "base64:2WMLubQ7dVSAvBWzd9xnIclpsOQw/HXd+CckCzM6Tqk="
     }
 }
